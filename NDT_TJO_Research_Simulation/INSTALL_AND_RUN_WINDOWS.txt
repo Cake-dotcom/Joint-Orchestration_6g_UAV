@@ -1,0 +1,25 @@
+WINDOWS QUICK START
+===================
+
+1. Extract NDT_TJO_Research_Simulation.zip.
+2. Open the extracted folder in VS Code.
+3. Open Terminal -> New Terminal (PowerShell).
+4. Run:
+
+   py -3 -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+   python run_experiments.py
+
+5. Open results\figures for the PNG graphs and results\summary.csv for the
+   mean/std performance comparison.
+
+For a quick check only:
+   python run_experiments.py --quick
+
+You can also double-click run_windows.bat to create the venv, install the two
+packages and launch the complete default experiment. Internet is required for
+package installation. The actual simulation itself does not need internet.
+
+IMPORTANT: Read ASSUMPTIONS_AND_SCOPE.md before citing any outputs in a paper.
